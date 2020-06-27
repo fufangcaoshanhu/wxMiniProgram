@@ -1,1 +1,10 @@
+<!-- mustache语法：{{}} -->
+<view>{{name}}</view>
 
+<!-- for循环 -->
+<view wx:for="{{students}}">{{item.name}}-{{item.age}}</view>
+
+<!-- 事件绑定 -->
+<view>{{count}}</view>
+<button size="mini" bindtap="add">+</button>
+<button size="mini" bindtap="sub">-</button>

@@ -1,10 +1,16 @@
-<!-- mustache语法：{{}} -->
-<view>{{name}}</view>
-
-<!-- for循环 -->
-<view wx:for="{{students}}">{{item.name}}-{{item.age}}</view>
-
-<!-- 事件绑定 -->
-<view>{{count}}</view>
-<button size="mini" bindtap="add">+</button>
-<button size="mini" bindtap="sub">-</button>
+<view class="container">
+	<canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+	<button style="margin-top: 2rem;" type="primary" bindtap="updateData">更新数据</button>
+</view>
+<scroll-view style="margin-top: 20px;" scroll-x="true"v>
+	<view class="table">
+		<view class="table-tr">
+			<view class="table-th"></view>
+			<view wx:for="{{list}}" class="table-th">{{item}}</view>
+		</view>
+		<view wx:for="{{datas}}" wx:for-item="datalist" class="table-tr">
+			<view class="table-td">{{title[index]}}</view>
+			<view wx:for="{{datalist}}" class="table-td">{{item}}万元</view>
+		</view>
+	</view>
+</scroll-view>

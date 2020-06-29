@@ -1,0 +1,35 @@
+.canvas {
+  width: 100vw;
+  height: 15rem;
+}
+
+.table,.table div {
+  margin: 0 auto;
+}
+
+.table {
+  display: table;
+  width: 100vh;
+  border-collapse: collapse; 
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+  .table-tr {
+    display: table-row;
+    height: 1.5rem;
+    width: 100%;
+  }
+  .table-th {
+    display: table-cell;
+    width: 1rem;
+    font-weight: bold;
+    border: 1px solid gray;
+    text-align: center;
+    vertical-align: middle;
+  }
+    .table-td {
+      display: table-cell;
+      border: 1px solid gray;
+      text-align: center;
+      vertical-align: middle;
+    }

@@ -1,0 +1,26 @@
+.infotop{
+  margin-top: .5rem;
+  margin-left: .5rem;
+  position: relative;
+}
+
+.user-iamge {
+  position: absolute;
+  width: 5rem; 
+  height: 5rem;
+  border-radius: 20%;
+}
+
+.user-name {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 700;
+  left: 5.6rem;
+  top: .5rem;
+}
+
+.user-add {
+  position: absolute;
+  top: 3rem;
+  left:5.5rem;
+}

@@ -1,0 +1,16 @@
+<!--pages/profile/profile.wxml-->
+<view class="infotop">
+	<view class="user-iamge">
+		<open-data class="user-iamge" type="userAvatarUrl"></open-data>
+	</view>
+	<view class="user-name">
+		<open-data type="userNickName"></open-data>
+			<text> | </text>
+		<open-data type="userGender" lang="zh_CN"></open-data>
+	</view>
+	<view class="user-add">
+		<open-data type="userCity" lang="zh_CN"></open-data>
+		<text> - </text>
+		<open-data type="userProvince" lang="zh_CN"></open-data>
+	</view>
+</view>
